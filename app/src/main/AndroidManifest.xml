@@ -25,6 +25,8 @@
         <activity android:name=".Part1Chapters.Part1Main"/>
         <activity android:name=".Part2Chapters.Part2Main"/>
         <activity android:name=".Part1Exercises.Part1ExMain"/>
+        <activity android:name=".Part2Exercises.Part2ExMain"/>
+        <activity android:name=".ExerciseViewerMain.ExerciseViewerMain"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

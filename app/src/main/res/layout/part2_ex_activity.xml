@@ -5,16 +5,13 @@
     android:layout_width="match_parent"
     android:background="@color/white"
     android:layout_height="match_parent">
-
-
-
     <TextView
-        android:id="@+id/part1MathHeading"
+        android:id="@+id/part2ChHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/baloo_bhai_2_bold"
-        android:text="Part 1 Math"
-        android:textSize="50dp"
+        android:text="Part 1 Chapter 1"
+        android:textSize="45dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +25,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/part1MathHeading" />
+        app:layout_constraintTop_toBottomOf="@+id/part2ChHeading" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

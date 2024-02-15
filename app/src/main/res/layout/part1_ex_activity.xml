@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent">
     <TextView
         android:id="@+id/part1ChHeading"
@@ -11,6 +12,7 @@
         android:fontFamily="@font/baloo_bhai_2_bold"
         android:text="Part 1 Chapter 1"
         android:textSize="45dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
