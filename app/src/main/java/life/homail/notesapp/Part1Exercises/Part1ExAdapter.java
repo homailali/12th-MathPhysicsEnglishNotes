@@ -21,6 +21,9 @@ public class Part1ExAdapter extends RecyclerView.Adapter<Part1ExAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.exNo.setText(this.part1ExMain.modelArr.get(position).getExNo());
+        holder.exNo.setOnClickListener(e->{
+            this.part1ExMain.part1RcHandler.part1RcHandlerMain(position);
+        });
     }
     @Override
     public int getItemCount() {

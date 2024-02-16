@@ -10,6 +10,7 @@ public class Part1ExMain extends AppCompatActivity{
     protected Part1ExViews part1ExViews;
     protected ArrayList<Model> modelArr=new ArrayList<>();
     protected Part1ExAdapter part1ExAdapter;
+    protected Part1RcHandler part1RcHandler=new Part1RcHandler(this);
     @Override
     public void onCreate(Bundle getCodeFromParent){
         super.onCreate(getCodeFromParent);
