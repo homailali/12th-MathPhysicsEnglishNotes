@@ -114,9 +114,31 @@ public class Part1ExViewer {
                     case "2"-> this.setPdf("MathPdfs/Part1Math/Ch11/ex_11 (2).pdf");
                 }
             }
+            case "12"->{
+                switch (this.exerciseViewerMain.exerciseNo){
+                    case "1"-> this.setPdf("MathPdfs/Part1Math/Ch12/ex_12 (1).pdf");
+                    case "2"-> this.setPdf("MathPdfs/Part1Math/Ch12/ex_12 (2).pdf");
+                    case "3"-> this.setPdf("MathPdfs/Part1Math/Ch12/ex_12 (3).pdf");
+                    case "4"-> this.setPdf("MathPdfs/Part1Math/Ch12/ex_12 (4).pdf");
+                    case "5"-> this.setPdf("MathPdfs/Part1Math/Ch12/ex_12 (5).pdf");
+                    case "6"-> this.setPdf("MathPdfs/Part1Math/Ch12/ex_12 (6).pdf");
+                    case "7"-> this.setPdf("MathPdfs/Part1Math/Ch12/ex_12 (7).pdf");
+                    case "8"-> this.setPdf("MathPdfs/Part1Math/Ch12/ex_12 (8).pdf");
+                }
+            }
+            case "13"->{
+                switch (this.exerciseViewerMain.exerciseNo){
+                    case "1"-> this.setPdf("MathPdfs/Part1Math/Ch13/ex_13 (1).pdf");
+                    case "2"-> this.setPdf("MathPdfs/Part1Math/Ch13/ex_13 (2).pdf");
+                }
+            }
+            case "14"->{
+                switch (this.exerciseViewerMain.exerciseNo){
+                    case "1"-> this.setPdf("MathPdfs/Part1Math/Ch14/ex_14 (1).pdf");
+                }
+            }
         }
     }
-
     private void setPdf(String assetPath){
         this.exerciseViewerMain.exViewerViews.pdfView.fromAsset(assetPath).load();
     }
