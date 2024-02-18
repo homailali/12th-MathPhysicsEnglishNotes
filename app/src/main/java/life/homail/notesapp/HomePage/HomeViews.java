@@ -4,7 +4,8 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-import life.homail.notesapp.MathPage.MathMain;
+import life.homail.notesapp.Maths.MathHomePage.MathMain;
+import life.homail.notesapp.Physics.PhysicsHomePage.PhysicsHomePageMain;
 import life.homail.notesapp.R;
 
 public class HomeViews {
@@ -39,6 +40,7 @@ public class HomeViews {
         this.homeMain.startActivity(intent);
     }
     private void physicsNotesBtnHandler(View view){
-
+        Intent intent=new Intent(this.homeMain, PhysicsHomePageMain.class);
+        this.homeMain.startActivity(intent);
     }
 }
