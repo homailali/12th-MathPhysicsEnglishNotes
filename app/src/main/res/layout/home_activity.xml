@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     tools:context=".HomePage.HomeMain">
 
 
@@ -12,45 +11,64 @@
         android:id="@+id/notesAppHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/baloo_bhai_2_bold"
-        android:text="Notes app"
-        android:textColor="@color/black"
+        android:fontFamily="@font/baloo_bhai_2_semibold"
+        android:gravity="center"
+        android:lineSpacingExtra="-30dp"
+        android:text="Notes App"
         android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/baloo_bhai_2_medium"
+        android:gravity="center"
+        android:text="This app contains notes for second year maths and physics book.The notes have been taken from taleemcity.com so all credit goes to them."
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notesAppHeading" />
+
+
+
+    <Button
+        android:id="@+id/mathNotesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/btnColor"
+        android:fontFamily="@font/baloo_bhai_2_medium"
+        android:text="Math Notes"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:cornerRadius="10dp"
+        android:lineSpacingExtra="-10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:rippleColor="#20FFFFFF" />
 
     <Button
         android:id="@+id/physicsNotesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:backgroundTint="@color/btnColor"
         android:fontFamily="@font/baloo_bhai_2_medium"
         android:text="Physics Notes"
-        android:textSize="30dp"
-        android:backgroundTint="#6750A4"
         android:textColor="@color/white"
-        app:cornerRadius="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mathNotesBtn" />
-
-    <Button
-        android:id="@+id/mathNotesBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/baloo_bhai_2_medium"
-        android:text="Math Notes"
         android:textSize="30dp"
-        android:backgroundTint="#6750A4"
-        android:textColor="@color/white"
+        android:lineSpacingExtra="-10dp"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notesAppHeading" />
+        app:layout_constraintTop_toBottomOf="@+id/mathNotesBtn"
+        app:rippleColor="#20FFFFFF" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

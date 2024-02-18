@@ -21,16 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Maths.MathHomePage.MathMain"/>
-        <activity android:name=".Maths.Part1.Part1Chapters.Part1Main"/>
-        <activity android:name=".Maths.Part2.Part2Chapters.Part2Main"/>
-        <activity android:name=".Maths.Part1.Part1Exercises.Part1ExMain"/>
-        <activity android:name=".Maths.Part2.Part2Exercises.Part2ExMain"/>
-        <activity android:name=".Maths.ExerciseViewerMain.ExerciseViewerMain"/>
+        <activity android:name=".Maths.MathChaptersPage.MathChapterMain"/>
+        <activity android:name=".Maths.MathExercisesPage.MathExMain"/>
+        <activity android:name=".Maths.MathExerciseViewerMain.MathExerciseViewerMain"/>
+        <activity android:name=".Maths.MathOptionsPage.MathOptionPageMain"/>
+        <activity android:name=".Maths.MathMcqsPage.MathMcqsPageMain"/>
 
-        <activity android:name=".Physics.PhysicsHomePage.PhysicsHomePageMain"/>
-        <activity android:name=".Physics.Part1.Part1PhyMain"/>
-        <activity android:name=".Physics.Part2.Part2PhyMain"/>
+        <activity android:name=".Physics.PhyChapters.PhyChMain"/>
+        <activity android:name=".Physics.PhyOptions.PhyOptionsMain"/>
+        <activity android:name=".Physics.PhyExerciseViewer.PhySolvedExViewerMain"/>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-import life.homail.notesapp.Maths.MathHomePage.MathMain;
-import life.homail.notesapp.Physics.PhysicsHomePage.PhysicsHomePageMain;
+import life.homail.notesapp.Maths.MathChaptersPage.MathChapterMain;
+import life.homail.notesapp.Physics.PhyChapters.PhyChMain;
 import life.homail.notesapp.R;
 
 public class HomeViews {
@@ -36,11 +36,11 @@ public class HomeViews {
 
     // Handling some events here but i prefer creating a separate file
     private void mathNotesBtnHandler(View view){
-        Intent intent=new Intent(this.homeMain, MathMain.class);
+        Intent intent=new Intent(this.homeMain, MathChapterMain.class);
         this.homeMain.startActivity(intent);
     }
     private void physicsNotesBtnHandler(View view){
-        Intent intent=new Intent(this.homeMain, PhysicsHomePageMain.class);
+        Intent intent=new Intent(this.homeMain, PhyChMain.class);
         this.homeMain.startActivity(intent);
     }
 }
