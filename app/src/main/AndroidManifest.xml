@@ -23,7 +23,9 @@
         </activity>
         <activity android:name=".Maths.MathChaptersPage.MathChapterMain"/>
         <activity android:name=".Maths.MathExercisesPage.MathExMain"/>
-        <activity android:name=".Maths.MathExerciseViewerMain.MathExerciseViewerMain"/>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name=".Maths.MathExerciseViewerMain.MathExerciseViewerMain"/>
         <activity android:name=".Maths.MathOptionsPage.MathOptionPageMain"/>
         <activity android:name=".Maths.MathMcqsPage.MathMcqsPageMain"/>
 

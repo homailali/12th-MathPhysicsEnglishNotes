@@ -1,5 +1,6 @@
 package life.homail.notesapp.Maths.MathMcqsPage;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.github.barteksc.pdfviewer.PDFView;
@@ -12,12 +13,24 @@ public class MathMcqsPageMain extends AppCompatActivity{
     @Override
     public void onCreate(Bundle getCodeFromParent){
         super.onCreate(getCodeFromParent);
-        super.setContentView(R.layout.math_mcq_activity);
+        super.setContentView(R.layout.math_mcq_viewer_activity);
         this.initializeViews();
         this.getChName();
         this.setPdfBasedOnChapter();
+        this.onConfigurationChanged(getResources().getConfiguration());
     }
 
+
+    @Override
+    public void onConfigurationChanged(Configuration configuration) {
+        super.onConfigurationChanged(configuration);
+        if (configuration.orientation==Configuration.ORIENTATION_PORTRAIT){
+            this.pdfView.resetZoom();
+        } else if (configuration.orientation==Configuration.ORIENTATION_LANDSCAPE){
+            this.pdfView.resetZoom();
+            this.pdfView.zoomTo(this.pdfView.getZoom()+1f);
+        }
+    }
 
 
 

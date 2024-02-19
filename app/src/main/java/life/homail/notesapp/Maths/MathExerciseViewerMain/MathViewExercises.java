@@ -4,7 +4,7 @@ public class MathViewExercises {
     public MathViewExercises(MathExerciseViewerMain mathExerciseViewerMain) {
         this.mathExerciseViewerMain = mathExerciseViewerMain;
     }
-    protected void part2ExViewerMain(){
+    protected void mathViewExercisesMain(){
         switch (this.mathExerciseViewerMain.chapterNo){
             case "1"->{
                 switch (this.mathExerciseViewerMain.exerciseNo){
