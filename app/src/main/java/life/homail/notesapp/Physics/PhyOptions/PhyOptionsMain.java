@@ -4,13 +4,20 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+
 import life.homail.notesapp.Physics.PhyExerciseViewer.PhySolvedExViewerMain;
 import life.homail.notesapp.R;
 
 public class PhyOptionsMain extends AppCompatActivity{
-    private String chNoReceived;
+    protected String chNoReceived;
     private TextView chNoTv;
-    private Button showSolvedExBtn;
+    protected PhyOpAdapter phyOpAdapter;
+    protected RecyclerView rcView;
+    protected ArrayList<String> btnTextsArr=new ArrayList<>();
     @Override
     public void onCreate(Bundle getCodeFromParent){
         super.onCreate(getCodeFromParent);
@@ -18,18 +25,17 @@ public class PhyOptionsMain extends AppCompatActivity{
         this.initializeViews();
         this.getChNoReceived();
         this.setChNo();
-        this.showSolvedExBtnHandler();
+        this.addTextToBtnTextsArr();
+        this.rcViewAndAdapterSettings();
     }
-    private void showSolvedExBtnHandler(){
-        this.showSolvedExBtn.setOnClickListener(e->{
-            Intent intent=new Intent(this, PhySolvedExViewerMain.class);
-            intent.putExtra("chapterNo",this.chNoReceived);
-            super.startActivity(intent);
-        });
+    private void rcViewAndAdapterSettings(){
+        this.phyOpAdapter=new PhyOpAdapter(this);
+        this.rcView.setLayoutManager(new LinearLayoutManager(this));
+        this.rcView.setAdapter(this.phyOpAdapter);
     }
-    private void initializeViews(){
+    private void initializeViews() {
         this.chNoTv=super.findViewById(R.id.chNoTv);
-        this.showSolvedExBtn=super.findViewById(R.id.showSolvedExBtn);
+        this.rcView=super.findViewById(R.id.rcView);
     }
     private void getChNoReceived(){
         Intent intent=getIntent();
@@ -38,5 +44,9 @@ public class PhyOptionsMain extends AppCompatActivity{
     private void setChNo(){
 
         this.chNoTv.setText("Chapter "+this.chNoReceived);
+    }
+
+    private void addTextToBtnTextsArr(){
+        this.btnTextsArr.add("Show solved exercise");
     }
 }

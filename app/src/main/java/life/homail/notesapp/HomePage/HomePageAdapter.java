@@ -16,7 +16,7 @@ public class HomePageAdapter extends RecyclerView.Adapter<MyViewHolder>{
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(this.homeMain).inflate(R.layout.btn_row_design,parent,false);
+        View view= LayoutInflater.from(this.homeMain).inflate(R.layout.math_btn_row_design,parent,false);
         MyViewHolder myViewHolder=new MyViewHolder(view);
         return myViewHolder;
     }
