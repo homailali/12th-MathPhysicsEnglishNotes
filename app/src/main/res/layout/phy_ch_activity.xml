@@ -1,16 +1,168 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+
+        >
+
+        <Button
+            android:id="@+id/ch12Btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Ch 12 - Electrostatics"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@color/btnHoverColor" />
+
+        <Button
+            android:id="@+id/ch13Btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Ch 13 - Current electricity"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ch12Btn"
+            app:rippleColor="@color/btnHoverColor" />
+
+        <Button
+            android:id="@+id/ch14Btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Ch 14 - Electromagnetism"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ch13Btn"
+            app:rippleColor="@color/btnHoverColor" />
+
+        <Button
+            android:id="@+id/ch15Btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Ch 15 - Electromagnetic induction"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ch14Btn"
+            app:rippleColor="@color/btnHoverColor" />
+
+        <Button
+            android:id="@+id/ch16Btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Ch 16 - Alternating current"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ch15Btn"
+            app:rippleColor="@color/btnHoverColor" />
+
+        <Button
+            android:id="@+id/ch17Btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Ch 17 - Physics of solids"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ch16Btn"
+            app:rippleColor="@color/btnHoverColor" />
+
+
+        <Button
+            android:id="@+id/ch18Btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Ch 18 - Electronics"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ch17Btn"
+            app:rippleColor="@color/btnHoverColor" />
+
+        <Button
+            android:id="@+id/ch19Btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Ch 19 - Dawn of modern physics"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ch18Btn"
+            app:rippleColor="@color/btnHoverColor" />
+
+        <Button
+            android:id="@+id/ch20Btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Ch 20 - Atomic spectra"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ch19Btn"
+            app:rippleColor="@color/btnHoverColor" />
+
+        <Button
+            android:id="@+id/ch21Btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Ch 21 - Nuclear physics"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ch20Btn"
+            app:rippleColor="@color/btnHoverColor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

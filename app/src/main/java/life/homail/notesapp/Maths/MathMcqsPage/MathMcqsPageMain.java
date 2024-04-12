@@ -15,7 +15,7 @@ public class MathMcqsPageMain extends AppCompatActivity{
         super.onCreate(getCodeFromParent);
         super.setContentView(R.layout.math_mcq_viewer_activity);
         this.initializeViews();
-        this.getChName();
+        this.getChNumber();
         this.setPdfBasedOnChapter();
         this.onConfigurationChanged(getResources().getConfiguration());
     }
@@ -53,7 +53,7 @@ public class MathMcqsPageMain extends AppCompatActivity{
         this.pdfView.fromAsset(assetPath).load();
     }
 
-    private void getChName(){
+    private void getChNumber(){
         Intent intent=getIntent();
         this.chNo=intent.getStringExtra("chapterNo");
     }

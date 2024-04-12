@@ -1,16 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_width="match_parent"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/chapterOneBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Chapter 1 - Functions &amp; limits"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:textSize="25sp"
+            android:lineSpacingExtra="-13dp"
+            app:cornerRadius="10dp"
+            app:rippleColor="@color/btnHoverColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/chapterTwoBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Chapter 2 - Differentiation"
+            android:textSize="25sp"
+            android:lineSpacingExtra="-13dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapterOneBtn"
+            app:rippleColor="@color/btnHoverColor" />
+
+
+        <Button
+            android:id="@+id/chapterThreeBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Chapter 3 - Integration"
+            android:textSize="25sp"
+            android:lineSpacingExtra="-13dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapterTwoBtn"
+            app:rippleColor="@color/btnHoverColor" />
+
+
+        <Button
+            android:id="@+id/chapterFourBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Chapter 4 - Intro to analytical geometry"
+            android:textSize="25sp"
+            android:lineSpacingExtra="-13dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapterThreeBtn"
+            app:rippleColor="@color/btnHoverColor" />
+
+        <Button
+            android:id="@+id/chapterFiveBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:lineSpacingExtra="-13dp"
+            android:text="Chapter 5 - Linear inequalities &amp; linear programming"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapterFourBtn"
+            app:rippleColor="@color/btnHoverColor" />
+
+
+        <Button
+            android:id="@+id/chapterSixBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:lineSpacingExtra="-13dp"
+            android:text="Chapter 6 - Conic sections"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapterFiveBtn"
+            app:rippleColor="@color/btnHoverColor" />
+
+        <Button
+            android:id="@+id/chapterSevenBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:lineSpacingExtra="-13dp"
+            android:text="Chapter 7 - Vectors"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapterSixBtn"
+            app:rippleColor="@color/btnHoverColor" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

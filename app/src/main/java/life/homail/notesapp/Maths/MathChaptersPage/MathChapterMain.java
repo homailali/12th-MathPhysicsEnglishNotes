@@ -8,10 +8,8 @@ import java.util.ArrayList;
 
 import life.homail.notesapp.R;
 public class MathChapterMain extends AppCompatActivity{
-    protected MathChViews MathChViews;
-    protected MathChAdapter mathChAdapter;
-    protected ArrayList<MathChModel> MathChModelArr =new ArrayList<>();
-    protected MathChRcHandler MathChRcHandler =new MathChRcHandler(this);
+    protected MathChViews mathChViews;
+    private MathDialogClass mathDialogClass;
     @Override
     public void onCreate(Bundle getCodeFromParent){
         super.onCreate(getCodeFromParent);
@@ -19,14 +17,16 @@ public class MathChapterMain extends AppCompatActivity{
         this.doAtEndOfOnCreate();
     }
     private void doAtEndOfOnCreate(){
-        MathChViews =new MathChViews(this);
-        mathChAdapter=new MathChAdapter(this);
-        this.rcViewSettings();
+        mathChViews =new MathChViews(this);
+        this.mathDialogClass=new MathDialogClass(this);
     }
 
-    private void rcViewSettings(){
-        this.MathChViews.rcView.setLayoutManager(new LinearLayoutManager(this));
-        this.MathChViews.rcView.setAdapter(this.mathChAdapter);
+
+    public MathDialogClass getMathDialogClass() {
+        return mathDialogClass;
     }
 
+    public void setMathDialogClass(MathDialogClass mathDialogClass) {
+        this.mathDialogClass = mathDialogClass;
+    }
 }

@@ -6,10 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import java.util.ArrayList;
 import life.homail.notesapp.R;
 public class PhyChMain extends AppCompatActivity{
-    protected PhyChAdapter phyChAdapter;
     protected PhyChViews phyChViews;
-    protected ArrayList<PhyChModel> phyChModelArr =new ArrayList<>();
-    protected PhyChRcHandler phyChRcHandler =new PhyChRcHandler(this);
+    private PhyChDialogClass physicsChDialog;
     @Override
     public void onCreate(Bundle getCodeFromParent){
         super.onCreate(getCodeFromParent);
@@ -18,11 +16,14 @@ public class PhyChMain extends AppCompatActivity{
     }
     private void atEndOfOnCreate(){
         this.phyChViews =new PhyChViews(this);
-        this.phyChAdapter =new PhyChAdapter(this);
-        this.rcViewSettings();
+        this.physicsChDialog=new PhyChDialogClass(this);
     }
-    private void rcViewSettings(){
-        this.phyChViews.rcView.setLayoutManager(new LinearLayoutManager(this));
-        this.phyChViews.rcView.setAdapter(this.phyChAdapter);
+
+    public PhyChDialogClass getPhyChDialogClass() {
+        return physicsChDialog;
+    }
+
+    public void setPhyChDialogClass(PhyChDialogClass physicsChDialog) {
+        this.physicsChDialog = physicsChDialog;
     }
 }

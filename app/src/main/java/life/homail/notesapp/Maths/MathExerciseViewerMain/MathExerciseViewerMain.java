@@ -19,11 +19,10 @@ public class MathExerciseViewerMain extends AppCompatActivity{
         this.atEndOfOnCreate();
         this.getIntentData();
         this.transferControl();
-        this.onConfigurationChanged(getResources().getConfiguration());
+        this.onConfigChanged(getResources().getConfiguration());
     }
-    @Override
-    public void onConfigurationChanged(Configuration configuration) {
-        super.onConfigurationChanged(configuration);
+
+    public void onConfigChanged(Configuration configuration) {
         if (configuration.orientation==Configuration.ORIENTATION_PORTRAIT){
             this.mathExViewerViews.pdfView.resetZoom();
         } else if (configuration.orientation==Configuration.ORIENTATION_LANDSCAPE){

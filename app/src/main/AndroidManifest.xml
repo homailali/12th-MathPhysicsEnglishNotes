@@ -30,8 +30,9 @@
         <activity android:name=".Maths.MathMcqsPage.MathMcqsPageMain"/>
 
         <activity android:name=".Physics.PhyChapters.PhyChMain"/>
-        <activity android:name=".Physics.PhyOptions.PhyOptionsMain"/>
-        <activity android:name=".Physics.PhyExerciseViewer.PhySolvedExViewerMain"/>
+        <activity android:name=".English.EnglishMain"/>
+        <activity android:name=".English.EnglishPdfViewer"/>
+        <activity android:name=".Physics.PhyPdfViewer.PhySolvedPdfViewerMain"/>
 
         <meta-data
             android:name="preloaded_fonts"
