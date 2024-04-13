@@ -1,5 +1,6 @@
 package life.homail.notesapp.Maths.MathExercisesPage;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import life.homail.notesapp.R;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,5 +33,4 @@ public class MathExMain extends AppCompatActivity{
         this.mathExViews.rcView.setLayoutManager(new LinearLayoutManager(this));
         this.mathExViews.rcView.setAdapter(this.mathExAdapter);
     }
-
 }

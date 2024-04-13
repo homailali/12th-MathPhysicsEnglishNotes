@@ -8,10 +8,11 @@ import life.homail.notesapp.R;
 import androidx.appcompat.app.AppCompatActivity;
 public class MathExerciseViewerMain extends AppCompatActivity{
     // Fields
+
     protected String chapterNo;
     protected String exerciseNo;
     protected MathExViewerViews mathExViewerViews;
-    protected MathViewExercises mathViewExercises =new MathViewExercises(this);
+    protected MathViewExercises mathViewExercises=new MathViewExercises(this);
     @Override
     public void onCreate(Bundle getCodeFromParent){
         super.onCreate(getCodeFromParent);

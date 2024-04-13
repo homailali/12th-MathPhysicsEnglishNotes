@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     >
@@ -13,16 +14,17 @@
             android:id="@+id/showMcqsBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show mcqs"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/btnColor"
             android:fontFamily="@font/baloo_bhai_2_medium"
-            android:textSize="25sp"
             android:lineSpacingExtra="-13dp"
+            android:text="Show mcqs"
+            android:textSize="25sp"
             app:cornerRadius="10dp"
-            app:rippleColor="@color/btnHoverColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/mathChapterNoTv"
+            app:rippleColor="@color/btnHoverColor" />
 
         <Button
             android:id="@+id/showExercisesBtn"
@@ -39,7 +41,17 @@
             app:layout_constraintTop_toBottomOf="@+id/showMcqsBtn"
             app:rippleColor="@color/btnHoverColor" />
 
-
+        <TextView
+            android:id="@+id/mathChapterNoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter no"
+            android:textSize="30sp"
+            android:lineSpacingExtra="-15dp"
+            android:fontFamily="@font/baloo_bhai_2_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

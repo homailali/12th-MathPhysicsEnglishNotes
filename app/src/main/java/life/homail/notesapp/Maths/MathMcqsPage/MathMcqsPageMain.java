@@ -17,13 +17,12 @@ public class MathMcqsPageMain extends AppCompatActivity{
         this.initializeViews();
         this.getChNumber();
         this.setPdfBasedOnChapter();
-        this.onConfigurationChanged(getResources().getConfiguration());
+        this.onConfigChanged(getResources().getConfiguration());
     }
 
 
-    @Override
-    public void onConfigurationChanged(Configuration configuration) {
-        super.onConfigurationChanged(configuration);
+
+    public void onConfigChanged(Configuration configuration) {
         if (configuration.orientation==Configuration.ORIENTATION_PORTRAIT){
             this.pdfView.resetZoom();
         } else if (configuration.orientation==Configuration.ORIENTATION_LANDSCAPE){

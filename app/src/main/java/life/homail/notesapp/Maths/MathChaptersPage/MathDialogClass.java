@@ -3,6 +3,7 @@ package life.homail.notesapp.Maths.MathChaptersPage;
 import android.app.Dialog;
 import android.content.Intent;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +19,7 @@ public class MathDialogClass {
 
     private Button showExercisesBtn;
     private Button showMcqsBtn;
+    private TextView mathChapterNoTv;
 
     protected  MathDialogClass (MathChapterMain mathChapterMain){
         this.mathChapterMain=mathChapterMain;
@@ -35,6 +37,7 @@ public class MathDialogClass {
     private void initializeViews(){
         this.showMcqsBtn=this.mathDialog.findViewById(R.id.showMcqsBtn);
         this.showExercisesBtn=this.mathDialog.findViewById(R.id.showExercisesBtn);
+        this.mathChapterNoTv=this.mathDialog.findViewById(R.id.mathChapterNoTv);
     }
     private void setEventHandlers(){
         this.showMcqsBtn.setOnClickListener(e->this.changeIntent(MathMcqsPageMain.class));
@@ -53,6 +56,7 @@ public class MathDialogClass {
 
     public Dialog getMathDialog(String chapterNo) {
         this.chapterNoReceived=chapterNo;
+        this.mathChapterNoTv.setText("Chapter "+chapterNo);
         return mathDialog;
     }
 

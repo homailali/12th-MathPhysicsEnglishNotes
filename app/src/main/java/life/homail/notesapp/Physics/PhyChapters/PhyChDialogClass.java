@@ -3,6 +3,7 @@ package life.homail.notesapp.Physics.PhyChapters;
 import android.app.Dialog;
 import android.content.Intent;
 import android.widget.Button;
+import android.widget.TextView;
 
 import life.homail.notesapp.Physics.PhyPdfViewer.PhySolvedPdfViewerMain;
 import life.homail.notesapp.R;
@@ -13,6 +14,7 @@ public class PhyChDialogClass {
     private PhyChMain phyChMain;
     private Button chapterNotesBtn;
     private Button exerciseNotesBtn;
+    private TextView physicsChapterNoTv;
     protected PhyChDialogClass(PhyChMain phyChMain){
         this.phyChMain=phyChMain;
         this.setUpDialog();
@@ -27,6 +29,7 @@ public class PhyChDialogClass {
     private void initializeViews(){
         this.chapterNotesBtn=this.phyChDialog.findViewById(R.id.chNotesBtn);
         this.exerciseNotesBtn=this.phyChDialog.findViewById(R.id.exerciseNotesBtn);
+        this.physicsChapterNoTv=this.phyChDialog.findViewById(R.id.physicsChapterNoTv);
     }
     private void setEventHandlers(){
         this.chapterNotesBtn.setOnClickListener(e-> this.changeIntent(true));
@@ -48,6 +51,7 @@ public class PhyChDialogClass {
 
     public Dialog getPhyChDialog(String chNo) {
         this.chNoReceived=chNo;
+        this.physicsChapterNoTv.setText("Chapter "+chNo);
         return phyChDialog;
     }
 

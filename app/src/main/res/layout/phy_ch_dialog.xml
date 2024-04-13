@@ -11,15 +11,16 @@
         android:id="@+id/chNotesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chapter notes"
-        android:textSize="25sp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="@color/btnColor"
         android:fontFamily="@font/baloo_bhai_2_medium"
-        app:rippleColor="@color/btnHoverColor"
+        android:text="Chapter notes"
+        android:textSize="25sp"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/physicsChapterNoTv"
+        app:rippleColor="@color/btnHoverColor" />
 
     <Button
         android:id="@+id/exerciseNotesBtn"
@@ -34,4 +35,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chNotesBtn"
         app:rippleColor="@color/btnHoverColor" />
+
+
+    <TextView
+        android:id="@+id/physicsChapterNoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter no"
+        android:textSize="30sp"
+        android:lineSpacingExtra="-15dp"
+        android:fontFamily="@font/baloo_bhai_2_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

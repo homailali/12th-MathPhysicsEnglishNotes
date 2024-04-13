@@ -17,18 +17,15 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
         <activity android:name=".Maths.MathChaptersPage.MathChapterMain"/>
         <activity android:name=".Maths.MathExercisesPage.MathExMain"/>
-        <activity
-            android:configChanges="orientation|screenSize"
-            android:name=".Maths.MathExerciseViewerMain.MathExerciseViewerMain"/>
-        <activity android:name=".Maths.MathOptionsPage.MathOptionPageMain"/>
+        <activity android:name=".Maths.MathExerciseViewerMain.MathExerciseViewerMain"/>
         <activity android:name=".Maths.MathMcqsPage.MathMcqsPageMain"/>
-
         <activity android:name=".Physics.PhyChapters.PhyChMain"/>
         <activity android:name=".English.EnglishMain"/>
         <activity android:name=".English.EnglishPdfViewer"/>
