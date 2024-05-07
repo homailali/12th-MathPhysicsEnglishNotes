@@ -20,17 +20,9 @@ public class MathExerciseViewerMain extends AppCompatActivity{
         this.atEndOfOnCreate();
         this.getIntentData();
         this.transferControl();
-        this.onConfigChanged(getResources().getConfiguration());
     }
 
-    public void onConfigChanged(Configuration configuration) {
-        if (configuration.orientation==Configuration.ORIENTATION_PORTRAIT){
-            this.mathExViewerViews.pdfView.resetZoom();
-        } else if (configuration.orientation==Configuration.ORIENTATION_LANDSCAPE){
-            this.mathExViewerViews.pdfView.resetZoom();
-            this.mathExViewerViews.pdfView.zoomTo(this.mathExViewerViews.pdfView.getZoom()+1f);
-        }
-    }
+
     private void atEndOfOnCreate(){
         this.mathExViewerViews =new MathExViewerViews(this);
 

@@ -1,4 +1,7 @@
 package life.homail.notesapp.Maths.MathExerciseViewerMain;
+
+import com.github.barteksc.pdfviewer.listener.OnRenderListener;
+
 public class MathViewExercises {
     private MathExerciseViewerMain mathExerciseViewerMain;
     public MathViewExercises(MathExerciseViewerMain mathExerciseViewerMain) {
@@ -82,6 +85,6 @@ public class MathViewExercises {
         }
     }
     private void setPdf(String assetPath){
-        this.mathExerciseViewerMain.mathExViewerViews.pdfView.fromAsset(assetPath).load();
+        this.mathExerciseViewerMain.mathExViewerViews.pdfView.fromAsset(assetPath).onRender((nbPages, pageWidth, pageHeight) -> mathExerciseViewerMain.mathExViewerViews.pdfView.fitToWidth()).load();
     }
 }

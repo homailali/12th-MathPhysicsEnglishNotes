@@ -4,6 +4,8 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.github.barteksc.pdfviewer.PDFView;
+import com.github.barteksc.pdfviewer.listener.OnRenderListener;
+
 import life.homail.notesapp.R;
 public class PhySolvedPdfViewerMain extends AppCompatActivity{
     private String chNoReceived;
@@ -16,15 +18,6 @@ public class PhySolvedPdfViewerMain extends AppCompatActivity{
         this.initializeViews();
         this.getIntentData();
         this.setPdf();
-        this.onConfigChanged(getResources().getConfiguration());
-    }
-    public void onConfigChanged(Configuration configuration) {
-        if (configuration.orientation==Configuration.ORIENTATION_PORTRAIT){
-            this.pdfView.resetZoom();
-        } else if (configuration.orientation==Configuration.ORIENTATION_LANDSCAPE){
-            this.pdfView.resetZoom();
-            this.pdfView.zoomTo(this.pdfView.getZoom()+1f);
-        }
     }
     private void setPdf(){
         switch (this.chNoReceived){
@@ -46,7 +39,7 @@ public class PhySolvedPdfViewerMain extends AppCompatActivity{
 
     private void settingPdf(String assetPath){
 
-        this.pdfView.fromAsset(assetPath).load();
+        this.pdfView.fromAsset(assetPath).onRender((nbPages, pageWidth, pageHeight) -> pdfView.fitToWidth()).load();
     }
     private void getIntentData(){
         Intent intent=getIntent();

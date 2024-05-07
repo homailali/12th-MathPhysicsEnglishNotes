@@ -32,7 +32,7 @@
         android:layout_marginEnd="10dp"
         android:fontFamily="@font/baloo_bhai_2_medium"
         android:gravity="center"
-        android:text="This app contains notes for second year maths and physics book.The notes have been taken from taleemcity.com so all credit goes to them and most importantly free Palestine."
+        android:text="This app contains notes for second year maths physics and english book.The notes have been taken from taleemcity.com so all credit goes to them and most importantly free Palestine."
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
