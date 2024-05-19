@@ -15,6 +15,7 @@
         <Button
             android:id="@+id/ch12Btn"
             android:layout_width="0dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/btnColor"
             android:fontFamily="@font/baloo_bhai_2_medium"
@@ -30,6 +31,7 @@
         <Button
             android:id="@+id/ch13Btn"
             android:layout_width="0dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/btnColor"
             android:fontFamily="@font/baloo_bhai_2_medium"
@@ -45,6 +47,7 @@
         <Button
             android:id="@+id/ch14Btn"
             android:layout_width="0dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/btnColor"
             android:fontFamily="@font/baloo_bhai_2_medium"
@@ -60,6 +63,7 @@
         <Button
             android:id="@+id/ch15Btn"
             android:layout_width="0dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/btnColor"
             android:fontFamily="@font/baloo_bhai_2_medium"
@@ -75,6 +79,7 @@
         <Button
             android:id="@+id/ch16Btn"
             android:layout_width="0dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/btnColor"
             android:fontFamily="@font/baloo_bhai_2_medium"
@@ -90,6 +95,7 @@
         <Button
             android:id="@+id/ch17Btn"
             android:layout_width="0dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/btnColor"
             android:fontFamily="@font/baloo_bhai_2_medium"
@@ -106,6 +112,7 @@
         <Button
             android:id="@+id/ch18Btn"
             android:layout_width="0dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/btnColor"
             android:fontFamily="@font/baloo_bhai_2_medium"
@@ -121,6 +128,7 @@
         <Button
             android:id="@+id/ch19Btn"
             android:layout_width="0dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/btnColor"
             android:fontFamily="@font/baloo_bhai_2_medium"
@@ -136,6 +144,7 @@
         <Button
             android:id="@+id/ch20Btn"
             android:layout_width="0dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/btnColor"
             android:fontFamily="@font/baloo_bhai_2_medium"
@@ -151,6 +160,7 @@
         <Button
             android:id="@+id/ch21Btn"
             android:layout_width="0dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/btnColor"
             android:fontFamily="@font/baloo_bhai_2_medium"
